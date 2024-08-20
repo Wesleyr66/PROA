@@ -1,0 +1,79 @@
+/*css reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+main{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: bisque;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: greenyellow;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#lado_esquerdo{
+    position: relative;
+    background-color: rgb(103, 244, 244);
+    width: 30%;
+    height: 500px;
+    float: left;
+}
+#lado_direito{
+    float: left;
+    position: relative;
+    background-color: rgb(53, 53, 222);
+    width: 70%;
+    height: 500px;
+}
+footer{
+    color: white;
+    clear: left;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(44, 20, 2);
+}
+.caixa_branca{
+    position: relative;
+    width: 95%;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+article{
+    position: relative;
+    width: 95%;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+}
+#novo{
+    background-color: aqua;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+p{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: brown;
+    margin-top: 10px;    
+}
+div{
+    margin-top: 10px;
+    background-color: rgb(148, 148, 249);
+    width: 100%;
+    height: 220px;
+}

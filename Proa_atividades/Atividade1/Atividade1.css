@@ -1,0 +1,62 @@
+#topo,#le,#conteudo,#rodape{
+    position: relative;
+    left:100px;
+}
+#topo{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(36, 134, 203);    
+width: 1000px;
+height: 200px;
+font-size: 30px;
+}
+#le{
+    background-color: rgb(114, 159, 248);
+    width: 200px;
+    height: 600px;
+    float: left;
+}
+#conteudo{
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background:gray;
+    float:left;
+}
+#branco1{
+    left: 100px;
+    position: relative;
+    float: left;
+    border: rgb(114, 159, 248) solid 5px;
+    width: 190px;
+    height: 150px;
+}
+#branco2{
+    left: 900px;
+    position: relative;
+    top: 160px;
+    border: rgb(114, 159, 248) solid 5px;
+    width: 190px;
+    height: 150px;
+}
+#azul{
+    left: 900px;
+    top: 160px;
+    position: relative;
+    background-color: rgb(114, 159, 248);
+    width: 200px;
+    height: 280px;
+}
+#rodape{
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(0, 76, 255);  
+    clear: left;
+}
+#foto{
+    position: absolute;
+    left: 770px;
+    bottom: 200px;
+    
+}

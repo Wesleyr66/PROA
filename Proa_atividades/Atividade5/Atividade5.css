@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+main{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+h2{
+    text-align: left;
+}
+nav{
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+}
+#nav2{
+    text-align: center;
+    width: 25%;
+    height: 600px;
+    background-color:rgb(102, 98, 93);
+    float: left;
+}
+section{
+    background-color: plum;
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+header.header2{
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    padding: 15px;
+}
+#nuevo{
+color: black;
+}
+div{
+    background-color: rgb(129, 96, 38);
+    height: 200px;
+    margin: 10px;
+}
+#azul{
+    background-color: rgb(89, 177, 245);
+    text-align: left;
+    height: 20%;
+    color: black;
+}
+#caixacinza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: plum;
+}
+#cinza{
+    margin: 0px;
+    width: 31%;
+    height: 80%;
+    float: left;
+    background-color: gray;
+}
+aside{
+    width: 25%;
+    height: 600px;
+    background-color: palevioletred;
+    float: left;
+}
+footer{
+    background-color: black;
+    width: auto;
+    padding: 30px;
+    clear: left;
+}

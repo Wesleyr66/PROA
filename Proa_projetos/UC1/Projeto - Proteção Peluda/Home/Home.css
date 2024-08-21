@@ -172,13 +172,11 @@ strong {
   width: 18%;
   margin: 50px 15px 0px 15px;
   height: 350px;
-  background-size: cover;
   float: left;
   background-color: #ffe45e;
 }
 #pets_destaque img{
   width: 100%;
-  height: auto;
 }
 #porque_adotar{
   width: 100%;

@@ -64,6 +64,7 @@ section{
     width: 20%;
     height: 80%;
     margin: 2.5%;
+    text-align: center;
 }
 #branca img, #branca2 img{
     width: 100%;
@@ -97,24 +98,38 @@ div iframe{
 }
 #amarelo{
     background-color: rgb(255, 255, 255);
-    right: 20px;
+    height: auto;
 }
 aside{
     float: left;
     width: 40%;
     height: 70%;
     margin: 5%;
+}
+#um form,input,textarea{
     text-align: left;
 }
-#um{
-    background-color: blue;
+input{
+    border: 1px solid black;
+    padding: 7px;
+    width: 80%;
+    border-radius: 5px;
 }
+textarea{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#enviar{
+    text-align: center;
+}
+
 #dois{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: blue;
     font-size: 25px;
     margin: 30px;
-    text-align: center;
     font-weight: 700;
 }
 #dois img{
@@ -179,4 +194,6 @@ footer{
     #um,#dois{
         width: 98%;
     }
+    #um form,input,textarea{
+        width: 95%;
 }

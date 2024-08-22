@@ -62,7 +62,6 @@ section{
     background-color: white;
     float: left;
     width: 20%;
-    height: 80%;
     margin: 2.5%;
     text-align: center;
 }
@@ -196,5 +195,8 @@ footer{
     }
     #um form,input,textarea{
         width: 95%;
-    }
+    } 
+    #dois{
+        margin: 50px 0px 0px 0px;
+    }    
 }

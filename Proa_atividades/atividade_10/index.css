@@ -9,6 +9,9 @@ body{
     background-color: #282828;
     height: auto;
 }
+main{
+    width: 99%;
+}
 #esquerda{
     width: 35%;
     display: flex;
@@ -125,7 +128,7 @@ nav{
     float: left;
     left: 50px;
     top: 30px;
-    width: 95%;
+    width: 92%;
     display: flex;
     overflow: hidden;
 }
@@ -150,12 +153,13 @@ nav{
 }
 #seta{
     float: left;
+    left: 5%;
     top: 35px;
     color: #464444;
 }
 #videos{
     float: left;
-    width: 95%;
+    width: 93%;
     left: 5%;
     top: 100px;
 }
@@ -169,13 +173,13 @@ nav{
     overflow: hidden;
     margin-right: 15px;
 }
-#videos a{
+#videos a,#curto a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
-#videos p{
+#videos p,#curto p{
     color:#9b9999;
     font-size: 12px;
 }
@@ -183,11 +187,12 @@ nav{
     width: 10%;
 }
 #titulo{
-    padding-top: 50px;
-    margin: 0px 0px 0px 70px;
+    padding-top: 80px;
+    margin: 0px 0px 0px 120px;
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 10%;
+    font-size: 10px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -196,15 +201,18 @@ nav{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
-#short1{
-    width: 14%;
+#curto div{
+    width: 13.5%;
     background-color: #282828;
+    font-family: Arial, Helvetica, sans-serif;
     height: 500px;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     border-radius: 10px;
+    margin:0px 15px 0px 15px
 }
 
 @media only screen and (min-width:720px){
@@ -212,7 +220,7 @@ nav{
         
         #curto{
             flex-direction: column;
-            align-items: center;
+            align-items: center
         }
         #videos{
             left: 10%;
@@ -220,26 +228,42 @@ nav{
         #videos div{
             width: 40%;
         }
-        #short1{
+        #curto div{
             margin-bottom: 100px;
             clear: left;
             width: 50%;
+            height: auto;
+        }
+        nav{
+            width: 85%;
+        }
+        #seta{
+            left: 60px;
         }
     }
 }
 @media only screen and (min-width:1025px){
-    @media only screen and (max-width:1450px){
+    @media only screen and (max-width:1650px){
+        nav{
+            width: 89%;
+        }
         #videos div{
             width: 30%;
         }
     }
 }
 @media only screen and (max-width:719px){
+    nav{
+        width: 80%;
+    }
+    #seta{
+        left: 70px;
+    }
     aside{
         display: none;
     }
     #titulo{
-        top: 30px;
+        top: 10px;
         right: 50px;
     }
     #videos{
@@ -253,8 +277,9 @@ nav{
         width: 80%;
         padding-bottom: 10%;
     }
-    #short1{
+    #curto div{
         margin-bottom: 100px;
+        height: auto;
         clear: left;
         width: 50%;
     }

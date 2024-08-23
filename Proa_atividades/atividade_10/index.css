@@ -5,7 +5,7 @@
     position: relative;
     text-decoration: none;
 }
-main{
+body{
     background-color: #282828;
     height: auto;
 }
@@ -157,7 +157,7 @@ nav{
     float: left;
     width: 95%;
     left: 3%;
-    top: 5%;
+    top: 100px;
 }
 #videos img{
     border-radius: 20px;
@@ -225,6 +225,10 @@ nav{
     }
 }
 @media only screen and (max-width:719px){
+    #titulo{
+        top: 30px;
+        right: 50px;
+    }
     #curto{
         flex-direction: column;
         align-items: center;

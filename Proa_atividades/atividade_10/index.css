@@ -88,7 +88,7 @@ div img{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    top: 2%;
+    margin-top: 1.2%;
     left: 5%;
 }
 #criar,#sino,#perfil{
@@ -156,7 +156,7 @@ nav{
 #videos{
     float: left;
     width: 95%;
-    left: 3%;
+    left: 5%;
     top: 100px;
 }
 #videos img{
@@ -214,6 +214,9 @@ nav{
             flex-direction: column;
             align-items: center;
         }
+        #videos{
+            left: 10%;
+        }
         #videos div{
             width: 40%;
         }
@@ -224,10 +227,23 @@ nav{
         }
     }
 }
+@media only screen and (min-width:1025px){
+    @media only screen and (max-width:1450px){
+        #videos div{
+            width: 30%;
+        }
+    }
+}
 @media only screen and (max-width:719px){
+    aside{
+        display: none;
+    }
     #titulo{
         top: 30px;
         right: 50px;
+    }
+    #videos{
+        left: 15%;
     }
     #curto{
         flex-direction: column;
@@ -235,6 +251,7 @@ nav{
     }
     #videos div{
         width: 80%;
+        padding-bottom: 10%;
     }
     #short1{
         margin-bottom: 100px;

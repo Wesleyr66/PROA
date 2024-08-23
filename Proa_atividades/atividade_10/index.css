@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    text-decoration: none;
+}
+main{
+    background-color: #282828;
+    height: auto;
+}
+#esquerda{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+div img{
+    width: 100%;
+    height: auto;
+}
+#menu{
+    width: 25px;
+    float: left;
+    margin: 2% 0% 0% 3%;
+}
+#logo{
+    width:85px;
+    margin: 2% 0% 0% 3%;
+}
+#meio{
+    margin-top:0.6%;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+#meio2{
+    width: 95%;
+    display: flex;
+}
+#pesquisar{
+    width: 60%;
+    border: 1px #464444 solid;
+    border-radius:  20px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#pesquisa{
+    background-color: #282828;
+    border-radius:  20px 0px 0px 20px;
+    color: white;
+    padding: 12px;
+    outline: 0px;
+    width: 100%;
+}
+#teclado{
+    width: 25px;
+    right: 10px;
+}
+#lupa img{
+    width: 50%;
+}
+#lupa{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    background-color: #464444;
+    width: 60px;
+    height: 44px;
+    border-radius: 0px 20px 20px 0px;
+}
+#microfone{
+    margin-top: 0.5%;
+    left: 2%;
+    background-color: #464444;
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+}
+#direita{
+    float: left;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 2%;
+    left: 5%;
+}
+#criar,#sino,#perfil{
+    width: 25px;
+    height: 25px;
+}
+#perfil{
+    background-image: url("youtube_imagens/melanc.jpg");
+    border-radius: 100px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+aside{
+    clear: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    left: 1%;
+    float: left;
+}
+#home,#shorts,#video,#voce{
+    color: white;
+    margin: 40px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    clear: left;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    float: left;
+    left: 50px;
+    top: 30px;
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+}
+#navegacao p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 600;
+    width: auto;
+    display: flex;
+    white-space:nowrap;
+    background-color: #464444;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+}
+#videos p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+#seta{
+    float: left;
+    top: 35px;
+    color: #464444;
+}
+#videos{
+    float: left;
+    width: 95%;
+    left: 3%;
+    top: 5%;
+}
+#videos img{
+    border-radius: 20px;
+}
+#videos div{
+    float: left;
+    width: 19%;
+    height: 300px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+#videos a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+#videos p{
+    color:#9b9999;
+    font-size: 12px;
+}
+#titulo img{
+    width: 10%;
+}
+#titulo{
+    padding-top: 50px;
+    margin: 0px 0px 0px 70px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#curto{
+    top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#short1{
+    width: 14%;
+    background-color: #282828;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:720px){
+    @media only screen and (max-width:1024px){
+        
+        #curto{
+            flex-direction: column;
+            align-items: center;
+        }
+        #videos div{
+            width: 40%;
+        }
+        #short1{
+            margin-bottom: 100px;
+            clear: left;
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width:719px){
+    #curto{
+        flex-direction: column;
+        align-items: center;
+    }
+    #videos div{
+        width: 80%;
+    }
+    #short1{
+        margin-bottom: 100px;
+        clear: left;
+        width: 50%;
+    }
+}

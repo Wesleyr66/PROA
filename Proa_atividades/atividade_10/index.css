@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body{
-    background-color: #282828;
+    background-color: #0F0F0F;
     height: auto;
 }
 main{
@@ -44,14 +44,14 @@ div img{
 }
 #pesquisar{
     width: 60%;
-    border: 1px #464444 solid;
+    border: 1px #272626ff solid;
     border-radius:  20px 0px 0px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 #pesquisa{
-    background-color: #282828;
+    background-color: #0F0F0F;
     border-radius:  20px 0px 0px 20px;
     color: white;
     padding: 12px;
@@ -69,7 +69,7 @@ div img{
     display: flex;
     align-items: center;
     text-align:center;
-    background-color: #464444;
+    background-color: #272626ff;
     width: 60px;
     height: 44px;
     border-radius: 0px 20px 20px 0px;
@@ -77,7 +77,7 @@ div img{
 #microfone{
     margin-top: 0.5%;
     left: 2%;
-    background-color: #464444;
+    background-color: #272626ff;
     width: 35px;
     height: 35px;
     border-radius: 60%;
@@ -98,6 +98,10 @@ div img{
     width: 25px;
     height: 25px;
 }
+#criar:hover,#sino:hover{
+    background-color: #262626;
+    border-radius: 50px;
+}
 #perfil{
     background-image: url("youtube_imagens/melanc.jpg");
     border-radius: 100px;
@@ -113,9 +117,7 @@ aside{
     float: left;
 }
 #home,#shorts,#video,#voce{
-    color: white;
     margin: 40px 0px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     clear: left;
     width: 25px;
@@ -124,6 +126,14 @@ aside{
     flex-direction: column;
     align-items: center;
 }
+#home:hover,#shorts:hover,#video:hover,#voce:hover{
+    background-color:#262626;
+    border-radius: 100px;
+}
+#home a,#shorts a,#video,#voce a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 nav{
     float: left;
     left: 50px;
@@ -131,6 +141,10 @@ nav{
     width: 92%;
     display: flex;
     overflow: hidden;
+}
+#navegacao p:hover{
+    transition: 1s;
+    background-color:#545252;
 }
 #navegacao p{
     color: white;
@@ -141,7 +155,7 @@ nav{
     width: auto;
     display: flex;
     white-space:nowrap;
-    background-color: #464444;
+    background-color: #272626ff;
     border-radius: 15px;
     padding: 10px 15px 10px 15px;
 }
@@ -161,7 +175,7 @@ nav{
     float: left;
     width: 93%;
     left: 5%;
-    top: 100px;
+    top: 60px;
 }
 #videos img{
     border-radius: 20px;

@@ -523,3 +523,9 @@ footer ul{
   font-size: 16px;
   margin-bottom: 21px;
 }
+@media only screen and (max-width:1199px){
+  #texto_banner{
+    width: 100%;
+    left: 100px;
+  }
+}

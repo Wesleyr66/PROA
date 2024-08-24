@@ -5,15 +5,20 @@
   position: relative;
   text-decoration: none;
   color: black;
+  font-family: "Rubik", sans-serif;
+}
+body{
+  background: var(--Pale-Purple, #F9EDFF);
 }
 
 main {
   width: 100%;
   height: auto;
-  background-color: #ffe45e;
 }
+/* barra de pesquisa */
 header {
-  font-family: "Rubik", sans-serif;
+  position: sticky; /* manter barra de pesquisa na tela */
+  top: 0;
   border: black 1px solid;
   border-radius: 0px 0px 24px 24px;
   width: 80%;
@@ -21,6 +26,8 @@ header {
   background-color: white;
   margin: auto;
   font-size: 20px;
+  z-index: 2;
+  background-color: #F9EDFF;
 }
 
 #caixa {
@@ -41,12 +48,27 @@ li.navegacao {
   margin: 0px 12px 0px 12px;
 }
 
+.navegacao a:hover{
+  color: #840694;
+}
+
+.navegacao a:active {
+  background-color: #840694;
+  color: white;
+}
+
+.navegacao a {
+  padding: 15px;
+  border-radius: 15px;
+}
+
 #logo {
   left: 25px;
   width: 102px;
   height: 42px;
   top: 15px;
 }
+
 #login {
   top: 15px;
   padding-left: 50px;
@@ -56,4 +78,55 @@ li.navegacao {
   border-radius: 12px;
   background-color: #840694;
   color: #f9edff;
+  transition-duration: 0.5s;
 }
+
+#login:hover {
+  background-color: #f4b625;
+  color: #341c12;
+  transition: 0.5;
+}
+   /*titulos*/
+#titulo1{
+  width: 75%;
+  left: 7%;
+  top: 60px;
+}
+#titulo1 h1{
+  color: var(--Russian-Violet---Gold, #840694);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 149.986%;
+  letter-spacing: 3.2px;
+}
+#p1{
+  top: 50px;
+  left: 7%;
+  color: var(--Russian-Violet, #390040);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 149.986%; /* 29.997px */
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+}
+#titulo2{
+  width: 75%;
+  left: 7%;
+  top: 100px;
+}
+#titulo2 h1{
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 149.986%; /* 71.993px */
+  letter-spacing: 2.4px;
+}
+#p2{
+  left: 7%;
+  top: 90px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 149.986%; /* 29.997px */
+  letter-spacing: 1px;
+}
+/* Os destacados */

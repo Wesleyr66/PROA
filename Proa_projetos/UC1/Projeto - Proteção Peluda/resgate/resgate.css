@@ -160,6 +160,7 @@ hr{
   background-color: #F4B625;
   padding: 1.5rem 2rem 1.5rem 2rem;
   width: 100%;
+  height: auto;
   border-radius: 24px;
   margin: 0 auto;
   margin-top: 3%;
@@ -231,10 +232,48 @@ textarea{
   padding: 1rem 0 1rem 0;
 }
 
-#declaro{
+#declaro,#consentimento{
   font-size: 24px;
   font-weight: 500;
 }
+#declaracao,#consdigital,#enviar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#consdigital{
+  padding-bottom: 5%;
+}
+#enviar button{
+  background-color: #840694;
+  padding: 30px 100px 30px 100px;
+  border-radius: 12px;
+}
+#final{
+  margin: 5% 0% 5% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button p{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 149.986%; /* 35.997px */
+  letter-spacing: 1.2px;
+}
+#p1{
+  font-family: "rubik";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149.986%; /* 20.998px */
+  letter-spacing: 0.7px;
+}
+
 
 /* rodape */
 footer{

@@ -226,16 +226,24 @@
   
   
             <h3 class="condicoes_compromisso">Confirmação:</h3>`
-            <input class="checkbox" name="opcao2" value="declaro" /> <div id="declaro">Declaro de que as informações fornecidas são verdadeiras</div>
-            <input type="checkbox" name="opcao2" value="declaro1" /><div  id="consentimento">Consentimento digital</div>
-          </div>
-  
-          <button class="enviar_form">
-            <p>Enviar Formulário</p>
-          </button>
-  
-          <p>Você receberá um e-mail de confirmação</p>
+            <div id="declaracao">
+              <input type="checkbox" name="opcao2" value="declaro" required placeholder />
+              <div id="declaro">Declaro de que as informações fornecidas são verdadeiras</div>
+            </div>
+            <div id="consdigital">
+              <input type="checkbox" name="opcao2" value="declaro1" required placeholder />
+              <div id="consentimento">Consentimento digital</div>
+           </div>
+
           </fieldset>
+          <div id="final">
+            <div id="enviar">
+                <button class="enviar_form">
+                    <p>Enviar Formulário</p>
+                </button>
+            </div>
+          <p id="p1">Você receberá um e-mail de confirmação</p>
+        </div>
         </form>
 
         <hr>

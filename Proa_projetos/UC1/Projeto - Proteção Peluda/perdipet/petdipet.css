@@ -8,12 +8,12 @@
     font-family: "Rubik", sans-serif;
   }
   body{
-    background: var(--Pale-Purple, #F9EDFF);
+    background: #390040;
   }
   
   main {
     width: 100%;
-    height: auto;
+    height: 5000px;
   }
   /* barra de pesquisa */
   header {
@@ -90,7 +90,7 @@
 
   /* Banner */
 
-  #banner img,#emoji img,#formulario_total img{
+  #banner img, #emoji img, #formulario_total img, #whatsapp2 img{
     width: 100%;
   }
   #banner{
@@ -166,26 +166,24 @@
   #formulario_corpo{
     position: absolute;
     top: 16.3%;
-    border-top-right-radius: 42px;
+    border-radius: 42px;
     width: 100%;
-    height: 1000px;
     background-color: #F4B625;
   }
-  #teste33{
+  #superior{
     left: 4%;
     margin-top: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  #teste33 div{
+  #superior div{
     margin: 10px 10px 10px 15px;
     font-size: 24px;
     display: flex;
     align-items: center;
   }
-  label{
-    float: left;
+  label,legend{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -194,7 +192,7 @@
   }
   input,select{
     width: 50%;
-    padding: 8px;
+    padding: 13px;
     margin: 15px;
     border-radius: 12px;
     background-color: #D9D9D9;
@@ -202,14 +200,14 @@
   strong{
     color: red;
   }
-  #teste55{
+  #inferior{
     width: 100%;
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  #teste55 div{
+  #inferior div{
     width: 40%;  
   }
   #whatsapp{
@@ -217,6 +215,25 @@
   }
   #whatsapp div{
     width: 100%;
+  }
+  #whatsapp2{
+    width: 90%;
+    background-color: #367A00;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #whatsapp2 p{
+    color: white;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 149.986%; /* 35.997px */
+    letter-spacing: 1.2px;
+  }
+  #whatsapp2 div{
+    width: 60px;
   }
   textarea{
     margin: 0px 40px 50px 0px;
@@ -227,4 +244,224 @@
   }
   #data_hora{
     right: 2%;
+  }
+
+  hr{
+    width: 90%;
+    left: 5%;
+    height: 4px;
+    background-color: #000000;
+    opacity: 20%;
+  }
+  /*observações adicionais*/
+
+  #conclusao{
+    display: flex;
+    flex-direction: column;
+  } 
+  #conclusao div{
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+  }
+  aside{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 5%;
+    margin-bottom: 2%;
+  }
+  legend{
+    margin: 3% 0% 1% 5%;
+    font-weight: 800;
+  }
+  #enviar{
+    margin-top: 20px;
+  }
+  #enviar button{
+    background-color: #840694;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  button p{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 149.986%; /* 35.997px */
+    letter-spacing: 1.2px;
+  }
+
+  /* Titulos */
+
+  #titulo1{
+    width: 75%;
+    left: 5%;
+    top: 60px;
+  }
+  #titulo1 h1{
+    color: #26547C;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 149.986%;
+    letter-spacing: 3.2px;
+  }
+  #p1{
+    top: 50px;
+    left: 5%;
+    color: #19354F;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 149.986%; /* 29.997px */
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+    width: 90%;
+  }
+
+  /* animais perdidos */
+  #animais_perdidos{
+    position: absolute;
+    margin-top: 10%;
+    z-index: 6;
+    background-color: #F9EDFF;
+    width: 100%;
+    border-radius: 45px;
+    margin-bottom: 10%;
+  }
+  #lua h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 149.986%;
+    letter-spacing: 1px;
+    color: #F9EDFF;
+    left: 5%;
+  }
+  #lua{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #001E39;
+    border-radius: 24px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+  #lua img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 24px;
+  }
+  #cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #lua p{
+    position: absolute;
+    color: #F4B625;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 149.986%; /* 20.998px */
+    letter-spacing: 0.7px;
+    left: 5%;
+  }
+  #carac{
+    left: 4%;
+    height: auto;
+    margin-top: 45%;
+    width: 92%;
+    border-radius: 12px;
+    background-color: #001221;
+    margin-bottom: 10%;
+  }
+  #carac div{
+    width: 30%;
+    border-radius: 12px;
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+    margin: 5px 0px 5px 5px;
+    float: left;
+  }
+  #gato{
+    background-color: #F4B625;
+    color: white;
+  }
+  #macho{
+    background-color: #0168C2;
+    color: white;
+  }
+  #filhote,#adulto{
+    background-color: #6BFFB8;
+    color: black;
+  }
+  #medio,#pequeno,#grande{
+    background-color: #505050;
+    color: white;
+  }
+  #branco{
+    background-color: white;
+    color: #000;
+  }
+  #docil{
+    background-color: #FF98C9;
+    color: #000;
+  }
+  #brincalhao{
+    background-color: #00B707;
+    color: white;
+  }
+  #femea{
+    background-color: #C20175;
+    color:#F9EDFF;
+  }
+  #cachorro,#marromcor{
+    background-color: #653623;
+    color: white;
+  }
+  #coelho{
+    background-color: #C20101;
+    color: white;
+  }
+  #agitado{
+    background-color: #0011AC;
+    color: white;
+  }
+  #tartaruga{
+    background-color: #1F7700;
+    color: white;
+  }
+  #irritado{
+    background-color: #8E0000;
+    color: white;
+  }
+  #preto{
+    background-color: #000;
+    color: white;
+    border: 2px white solid;
+  }
+  #cinza{
+    color: white;
+    background-color: #292929;
+  }
+  #dourado{
+    background-color: #FF4D00;
+    color: white;
+  }
+  #calmo{
+    background-color: #75BDFF;
+    color: #000;
+  }
+  #protetor{
+    background-color: #00743C;
+    color: white;
+  }
+  #verdecor{
+    background-color: #1F7700;
+    color: white;
+  }
+  #multicolorido{
+    background: linear-gradient(90deg, #131014 0%, #292929 33.33%, #653623 66.67%, #FF4C00 100%);
+    color: white;
+    width: auto;
   }

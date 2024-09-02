@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores A B C</title>
+</head>
+<body>
+    <h1>Ordem crescente de valores</h1>
+    <script>
+        let A = parseInt(prompt("Digite o valor A: "))
+        let B = parseInt(prompt("Digite o valor B: "))
+        let C = parseInt(prompt("Digite o valor C: "))
+
+        let um 
+        let dois
+        let tres
+
+        if(A<B && A<C){
+            tres=A
+        } 
+        else if(A>C && A>B){
+            um=A
+        }
+        else{
+            dois=A
+        }
+
+        if(B<A && B<C){
+            tres=B
+        } 
+        else if(B>C && B>A){
+            um=B
+        }
+        else{
+            dois=B
+        }
+
+        if(C<B && C<A){
+            tres=C
+        } 
+        else if(C>A && C>B){
+            um=C
+        }
+        else{
+            dois=C
+        }
+
+        document.write("1º" + um)
+        document.write("<br>2º" + dois)
+        document.write("<br>3º" + tres)
+    </script>
+</body>
+</html>

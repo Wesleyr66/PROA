@@ -20,6 +20,7 @@
             case "3" : prato = 250
             break
             case "4" : prato = 350
+            default: alert("Não existe esse prato")
         }
         switch(sobremesa){
             case "1" : sobremesa = 75
@@ -29,6 +30,7 @@
             case "3" : sobremesa = 170
             break
             case "4" : sobremesa = 200
+            default: alert("Não existe essa sobremesa")
         }
         switch(bebida){
             case "1" : bebida = 20
@@ -38,6 +40,7 @@
             case "3" : bebida = 100
             break
             case "4" : bebida = 65
+            default: alert("Não existe esse bebida")
         }
         let total = (prato+sobremesa+bebida)
         document.write("<br>O total de calórias ingeridas foram: " + total + "Cal")

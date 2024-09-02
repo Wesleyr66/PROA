@@ -9,8 +9,6 @@
     <h1>Calorias por alimentação</h1>
     <script>
         let prato = prompt("Temos 4 tipo de prato: 1 vegetariano, 2 Peixe, 3 Frango, 4 Carne ")
-        let sobremesa = prompt ("Temos 4 tipos de sobremesa: 1 Abacaxi, 2 Sorvete diet, 3 Mouse diet, 4 Mouse chocolate ")
-        let bebida = prompt ("Temos 4 tipos de bebida: 1 Chá, 2 Suco de laranja, 3 Suco de melão, 4 Refrigerante diet")
 
         switch(prato){
             case "1" : prato = 180
@@ -20,8 +18,11 @@
             case "3" : prato = 250
             break
             case "4" : prato = 350
-            default: alert("Não existe esse prato")
+            default: prato = 0, alert("Não existe esse prato")
         }
+
+        let sobremesa = prompt ("Temos 4 tipos de sobremesa: 1 Abacaxi, 2 Sorvete diet, 3 Mouse diet, 4 Mouse chocolate ")
+
         switch(sobremesa){
             case "1" : sobremesa = 75
             break
@@ -30,8 +31,10 @@
             case "3" : sobremesa = 170
             break
             case "4" : sobremesa = 200
-            default: alert("Não existe essa sobremesa")
+            default: sobremesa = 0,alert("Não existe essa sobremesa")
         }
+
+        let bebida = prompt ("Temos 4 tipos de bebida: 1 Chá, 2 Suco de laranja, 3 Suco de melão, 4 Refrigerante diet")
         switch(bebida){
             case "1" : bebida = 20
             break
@@ -40,7 +43,7 @@
             case "3" : bebida = 100
             break
             case "4" : bebida = 65
-            default: alert("Não existe esse bebida")
+            default: bebida = 0,alert("Não existe esse bebida")
         }
         let total = (prato+sobremesa+bebida)
         document.write("<br>O total de calórias ingeridas foram: " + total + "Cal")

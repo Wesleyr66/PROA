@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorias em uma refeição</title>
+</head>
+<body>
+    <h1>Calorias por alimentação</h1>
+    <script>
+        let prato = prompt("Temos 4 tipo de prato: 1 vegetariano, 2 Peixe, 3 Frango, 4 Carne ")
+        let sobremesa = prompt ("Temos 4 tipos de sobremesa: 1 Abacaxi, 2 Sorvete diet, 3 Mouse diet, 4 Mouse chocolate ")
+        let bebida = prompt ("Temos 4 tipos de bebida: 1 Chá, 2 Suco de laranja, 3 Suco de melão, 4 Refrigerante diet")
+
+        switch(prato){
+            case "1" : prato = 180
+            break
+            case "2" : prato = 230
+            break
+            case "3" : prato = 250
+            break
+            case "4" : prato = 350
+        }
+        switch(sobremesa){
+            case "1" : sobremesa = 75
+            break
+            case "2" : sobremesa = 110
+            break
+            case "3" : sobremesa = 170
+            break
+            case "4" : sobremesa = 200
+        }
+        switch(bebida){
+            case "1" : bebida = 20
+            break
+            case "2" : bebida = 70
+            break
+            case "3" : bebida = 100
+            break
+            case "4" : bebida = 65
+        }
+        let total = (prato+sobremesa+bebida)
+        document.write("<br>O total de calórias ingeridas foram: " + total + "Cal")
+    </script>
+</body>
+</html>

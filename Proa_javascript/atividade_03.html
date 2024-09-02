@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crédito Especial</title>
+</head>
+<body>
+    <h1>Crédito especial</h1>
+    <script>
+        let medio = parseInt(prompt("Digite seu Saldo: "))
+        let credito
+
+        if(medio < 500){
+            document.write("Voce não tem direito aos creditos :)")
+        }
+        else if(medio >500 && medio < 1001){
+            credito = (medio*0.3).toFixed(2)
+        }
+        else if(medio >1000 && medio < 3001){
+            credito = (medio*0.4).toFixed(2)
+        }
+        else{
+            credito = (medio*0.5).toFixed(2)
+        }
+        if(medio >= 500){
+        let juros = (credito * 0.02).toFixed(2)
+        document.write("Seu saldo médio era: "+ medio +"<br> Seu Crédito é: " + credito + "<br> Com juros de: " + juros)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPI</title>
+</head>
+<body>
+    <h1>Taxa em peças</h1>
+    <script>
+        let ipi = parseFloat(prompt("Qual a porcentagem do IPI a ser acrescido no valor das peças: "))
+        let peça1 = parseInt(prompt("O código da peça 1: "))
+        let valor1 = parseInt(prompt("O valor da peça 1: "))
+        let qnt1 = parseInt(prompt("A quantidade de peças 1: "))
+
+        let peça2 = parseInt(prompt("O código da peça 2: "))
+        let valor2 = parseInt(prompt("O valor da peça 2: "))
+        let qnt2 = parseInt(prompt("A quantidade de peças 2: "))
+
+        let total = ((valor1*qnt1)+(valor2*qnt2))*(ipi/100 + 1)
+
+        document.write(`O valor total já com acrescimo do IPI é: ${total.toFixed(2)}`)
+
+    </script>
+</body>
+</html>

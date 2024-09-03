@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Medias aritmeticas</h1>
+    <script>
+        let numero1 = parseInt(prompt("Digite um numero 1: "))
+        let numero2 = parseInt(prompt("Digite um numero 2: "))
+        let numero3 = parseInt(prompt("Digite um numero 3: "))
+
+        media1 = (numero1+numero2+numero3)/3
+        document.write(`A média desses numeros são: ${media1}<br>`)
+
+        let numero4 = parseInt(prompt("Digite um numero 1: "))
+        let numero5 = parseInt(prompt("Digite um numero 2: "))
+        let numero6 = parseInt(prompt("Digite um numero 3: "))
+
+        media2 = (numero4+numero5+numero6)/3
+        document.write(`A média desses numeros são: ${media2}<br>`)
+
+        soma = media1+media2
+        media3 = soma/2
+        document.write(`A soma dessas médias são: ${soma}<br> A média dessa soma é ${media3}`)
+    </script>
+</body>
+</html>

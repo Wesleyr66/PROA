@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <h1>Salário Reajustado</h1>
+    <script>
+        let salario = parseFloat(prompt("Digite seu salário: "))
+
+        let reajuste = parseFloat(prompt("Digite seu a % do reajuste necessário: "))
+
+        reajustado = salario * (reajuste/100+1)
+
+        document.write(`Seu salário reajustado foi: ${reajustado.toFixed(2)}`)
+    </script>
+</body>
+</html>

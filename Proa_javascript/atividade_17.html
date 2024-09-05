@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 idades</title>
+</head>
+<body>
+    <h1>Maiores idades</h1>
+    <script>
+        let maiores = 0
+        for(let cont = 1; cont<=20;cont++){
+            let idade = parseFloat(prompt(`Digite a Idade ${cont}: `))
+            if(idade>=18){
+                maiores++
+            }
+        }
+        document.write(`São no total: ${maiores} maiores de idade.`)
+
+    </script>
+</body>
+</html>

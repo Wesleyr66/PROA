@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 numeros</title>
+</head>
+<body>
+    <h1>10 numeros e soma</h1>
+    <script>
+        let total = 0
+        for(let cont = 1; cont<=10;cont++){
+            let numero = parseFloat(prompt(`Digite o numero ${cont}: `)) 
+            total = total + numero
+        }
+        if(total>1){
+        document.write(`Total :${total}`)
+        }else{
+            document.write(`Faltou um numero`)
+        }
+
+    </script>
+</body>
+</html>

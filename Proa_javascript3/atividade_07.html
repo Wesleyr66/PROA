@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p>7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse
+        aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+        Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um
+        novo valor ao usuário. </p>
+    <script>
+        let aprovados = 0;
+        let nota = 0;
+        let media = 0;
+        let cont = 0;
+
+
+        function notadoaluno() {
+
+            while(cont<6){
+                nota = parseFloat(prompt("Digite a nota do aluno: "))
+
+                if(nota>10){
+                    alert("INVALIDO")
+                }
+                else if(nota<=10){
+                    media+=nota
+                    cont++
+                }
+            }
+
+            media = media/cont
+
+            if (nota <= 10 ) {
+
+                if (media < 9.5) {
+                    document.write("<br>REPROVADO")
+                }
+                else {
+                    document.write("<br>APROVADO")
+                    aprovados++
+                }
+            }
+
+            let sim = prompt("Deseja olhar a nota de outro aluno? S/N")
+
+            switch (sim.toUpperCase()) {
+                case ("S"): cont = 0; notadoaluno()
+                    break
+
+                case "N": document.write("<br>Total de aprovados: " + aprovados)
+                    break
+
+                default: alert("Opção inválida")
+                    break;
+            }
+        }
+        notadoaluno()
+    </script>
+</body>
+
+</html>

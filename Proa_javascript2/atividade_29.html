@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>
+        29 Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "do-while".
+    </h1>
+    <script>
+
+        let numero = parseInt(prompt("digite um numero"));
+        let cont = 1;
+        let soma = 1;
+
+        do {
+
+            soma *= cont
+            cont++
+        }while (cont <= numero)
+
+        document.write(`O fatorial de ${numero} = ${soma}`)
+    </script>
+</body>
+
+</html>

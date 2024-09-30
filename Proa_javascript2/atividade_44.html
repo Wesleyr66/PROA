@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>
+        44 Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário.
+    </h1>
+    <script>
+
+        let numero = parseInt(prompt("digite um numero"));
+        let soma = 1;
+
+        for (let cont = 1; cont <= numero; cont++) {
+            soma *= cont
+        }
+
+        document.write(`O fatorial de ${numero} = ${soma}`)
+    </script>
+</body>
+
+</html>

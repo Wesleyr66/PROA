@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>
+        15 Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.
+    </h1>
+    <script>
+        let numero = 0;
+        let numero2 = 0;
+        let soma = 0;
+
+        for(let nome;nome !="FIM";){
+            nome = (prompt("Digite o nome: \nDigite fim para acabar")).toUpperCase()
+
+            if(nome=="FIM"){
+                break
+            }
+
+            numero = parseInt(prompt("Digite a idade "+(numero2+1)))
+            soma += numero
+            numero2++
+        }
+
+        document.write(`<br>Media das idades ${soma/numero2}\n`)
+
+    </script>
+</body>
+</html>

@@ -8,14 +8,14 @@ import Footer from './componentes/Footer/Footer.jsx'
 function App() {
 
   return (
-    <>
+    <main>
       <Header/>
       <RedSection/>
       <Azul/>
       <Laranja/>
       <Amarelo/>
       <Footer/>
-    </>
+    </main>
   )
 }
 

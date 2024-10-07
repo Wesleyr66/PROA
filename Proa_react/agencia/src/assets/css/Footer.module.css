@@ -1,0 +1,20 @@
+.corpo{
+    background-color: rgb(22, 21, 21);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.icons{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}

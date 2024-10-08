@@ -6,7 +6,7 @@ function Home() {
         <section className={Viagems.corpo}>
             <div className={Viagems.imagem_lado}></div>
             <div className={Viagems.texto_lado}>
-                <h1>Ecnontre aqui a viagem dos seus sonhos!!</h1>
+                <h1>Encontre aqui a viagem dos seus sonhos!!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing
                     elit. Delectus dolor voluptatem ipsa aut minus excepturi
                     ullam, molestias itaque impedit nemo ipsam aspernaturb

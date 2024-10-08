@@ -1,0 +1,24 @@
+.escocia{
+    background-image: url('../image/colina.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.china{
+    background-image: url('../image/Muralha.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.aruda{
+    background-image: url('../image/Aruba.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.canyon{
+    background-image: url('../image/GrandCanyon.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}

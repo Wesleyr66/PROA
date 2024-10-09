@@ -1,13 +1,18 @@
+import Sidebar from "./assets/components/Sidebar"
+
 function App() {
 
 
   return (
     <>
-      <button className={"botao text-primary"}>
-        Botão Primário
-      </button>
+      <Sidebar/>
     </>
   )
 }
 
+/*
+<button className={"botao text-primary"}>
+  Botão Primário
+</button>
+*/
 export default App

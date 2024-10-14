@@ -1,0 +1,19 @@
+.fundo {
+    background-color: greenyellow;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    background-image: url('../../imagem/guitarras_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    div {
+        margin-right: 10px;
+        display: flex;
+        p {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

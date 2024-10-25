@@ -1,6 +1,6 @@
 .fundo{
-    background-color: rgb(190, 103, 103);
-    height: 300px;
+    background-color: rgb(190, 103, 103,0.5);
+    height: 600px;
     display: flex;
     align-items: center;
 }

@@ -2,3 +2,8 @@ main{
     width: 80%;
     margin: auto;
 }
+body{
+    background-image: url('./assets//imagem/guitarra_fundo_body.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,7 +1,6 @@
 .direita{
     width: 40%;
     height: 80%;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,5 +17,19 @@
 .esquerda{
     width: 40%;
     height: 80%;
-    background-color: blue;
+}
+input{
+    border: 1px solid black;
+    padding: 7px;
+    width: 80%;
+    border-radius: 5px;
+}
+textarea{
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#enviar{
+    text-align: center;
 }

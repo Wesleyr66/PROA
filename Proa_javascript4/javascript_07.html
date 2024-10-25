@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <p>
+        87 Faça um programa que leia 10 números inteiros e exiba quantos deles são positivos.
+    </p>
+    <script>
+      let numero = [];
+
+      for (let i = 0; i < 10; i++) {
+        numero.push(parseInt(prompt(`Digite o número:`)));
+
+        if(numero[i]>0){
+            document.write(`${numero[i]},`)
+        }
+      }
+
+    </script>
+  </body>
+</html>

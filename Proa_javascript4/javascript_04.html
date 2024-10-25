@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <p>
+        84 Faça um programa que leia 5 números inteiros e exiba quantos deles são pares.
+    </p>
+    <script>
+      let numero = [];
+
+      for (let i = 0; i < 10; i++) {
+        numero.push(parseInt(prompt(`Digite o número:`)));
+      }
+
+      let soma = 0;
+      let cont = 0
+      for (let i = 0; i < numero.length; i++) {
+        par = numero[i];
+        if(par%2==0){
+            cont++
+        }
+      }
+      document.write(`${cont}`)
+    </script>
+  </body>
+</html>

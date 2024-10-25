@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <p>
+        100 Escreva um programa que leia uma matriz 3x3 de números inteiros e exiba o maior valor presente na matriz.
+    </p>
+    <script>
+      let matriz = [];
+      let numero;
+      let maior = 0;
+
+      for (let i = 0; i < 3; i++) {
+        matriz[i] = [];
+
+        for (let i2 = 0; i2 < 3; i2++) {
+          numero = parseInt(prompt(`Digite um valor: `));
+          matriz[i][i2] = numero;
+          if(maior<numero){
+            maior = numero
+          }
+        }
+
+      }
+
+      for (let i = 0; i < 3; i++) {
+        document.write(`${matriz[i]}<br/>`);
+      }
+
+      document.write(`<br/>${maior}`);
+    </script>
+  </body>
+</html>

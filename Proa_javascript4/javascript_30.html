@@ -12,27 +12,35 @@
     </p>
     <script>
       let matriz = [];
-      let numero ;
-      let sub = 0
+      let matriz2 = [];
+      let numero;
+      let soma = 0;
       for (let i = 0; i < 2; i++) {
         matriz[i] = [];
+        matriz2[i] = [];
 
         for (let i2 = 0; i2 < 2; i2++) {
-
-            numero = parseInt(
-            prompt(`Digite um valor: `)
-          );
-
-          sub -= numero
-
+          numero = parseInt(prompt(`Digite um valor: `));
+          soma -= numero;
           matriz[i][i2] = numero;
-
         }
 
+        for (let i2 = 0; i2 < 2; i2++) {
+          numero = parseInt(prompt(`Digite um valor: `));
+          soma -= numero;
+          matriz2[i][i2] = numero;
+        }
       }
 
-        document.write(`${sub}<br/>`);
+      for (let i = 0; i < 2; i++) {
+        document.write(`${matriz[i]}<br/>`);
+      }
 
+      for (let i = 0; i < 2; i++) {
+        document.write(`${matriz2[i]}<br/>`);
+      }
+
+      document.write(`<br/>${soma}`);
     </script>
   </body>
 </html>

@@ -8,20 +8,21 @@
   <body>
     <h1></h1>
     <p>
-      102 Faça um programa que leia duas matrizes 2x2 de números inteiros e
-      exiba o produto entre elas.
+      106 Escreva um programa que leia duas matrizes 2x2 de números inteiros e
+      verifique se elas são iguais.
     </p>
     <script>
       let matriz = [];
       let matriz2 = [];
-      let numero;
-      let resultado = [];
+      let numero = 0;
+
       for (let i = 0; i < 2; i++) {
         matriz[i] = [];
         matriz2[i] = [];
 
         for (let i2 = 0; i2 < 2; i2++) {
           numero = parseInt(prompt(`Digite um valor: `));
+
           matriz[i][i2] = numero;
         }
 
@@ -31,27 +32,41 @@
         }
       }
 
-      for (let i = 0; i < 2; i++) {
-        resultado[i] = [];
-        for (let j = 0; j < 2; j++) {
-          resultado[i][j] =
-            matriz[i][0] * matriz2[0][j] + matriz[i][1] * matriz2[1][j];
-        }
-      }
 
-      document.write("Matriz 1:<br/>");
+
       for (let i = 0; i < 2; i++) {
         document.write(`${matriz[i]}<br/>`);
       }
 
-      document.write("<br/>Matriz 2:<br/>");
+
+
       for (let i = 0; i < 2; i++) {
         document.write(`${matriz2[i]}<br/>`);
       }
 
-      document.write("<br/>Produto das Matrizes:<br/>");
+
+
+      let cont = 0
+
+
+
       for (let i = 0; i < 2; i++) {
-        document.write(`${resultado[i]}<br/>`);
+
+        for (let i2 = 0; i2 < 2; i2++) {
+
+          if (matriz[i][i2] != matriz2[i][i2]) {
+            cont++
+          } 
+        }
+      }
+
+      
+
+      if(cont>0){
+        document.write('são difentes')
+      }
+      else{
+        document.write('são iguais')
       }
     </script>
   </body>

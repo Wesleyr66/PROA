@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <p>
+        107 Crie um programa que leia uma matriz 3x3 de números inteiros e exiba o produto dos elementos da diagonal secundária.
+    </p>
+    <script>
+      let matriz = [];
+      let numero ;
+      let produto = 1
+      for (let i = 0; i < 3; i++) {
+        matriz[i] = [];
+
+        for (let i2 = 0; i2 < 3; i2++) {
+
+            numero = parseInt(
+            prompt(`Digite um valor: `)
+          );
+
+          matriz[i][i2] = numero;
+
+        }
+
+      }
+      let j = 0
+
+      document.write(`${matriz[0]}<br/>`);
+      document.write(`${matriz[1]}<br/>`);
+      document.write(`${matriz[2]}<br/>`);
+
+      for (let i = 2; i >= 0; i--) {
+        produto *= matriz[i][j]
+        j++
+      }
+
+        document.write(`<br/>${produto}`);
+
+    </script>
+  </body>
+</html>
